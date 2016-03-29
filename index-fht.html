@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> TREC POLAR Dataset MIME Detection</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+	</link>
+	<link rel="stylesheet" href="style/style.css">
+	</link>
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>	
+	</link>
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<ul class="navbar-nav">
+			<p style="color:white">TREC POLAR DATASET MIME DASHBOARD</p>
+		</ul>
+	</nav>
+	<div class="container row main">
+		<div class="container fileselect" >
+			<p><b> FHT Profile for Multiple MIME Types ( Length 8)</b></p>
+			<select id="fileselection">
+				<option value="Noselection" selected="selected">Select MIME Type</option>
+				<option value="video_quicktime_H.json">video/quicktime</option>
+				<option value= "application_x-bittorrent_H.json">application/x-bittorrent</option>
+				<option value="application_gzip_H.json">application/gzip</option>
+				<option value="application_postscript_H.json">application/postscrcipt</option>
+				<option value="application_rtf_H.json">application/rtf</option>
+				<option value="application_vnd.google-earth.kml+xml_H.json">application/vnd.google-earth.kml+xml</option>
+				<option value="application_x-bibtex-text-file_H.json">application/x-bibtex-text-file</option>
+				<option value="application_x-bittorrent_H.json">application/x-bittorrent</option>
+				<option value="application_x-bzip2_H.json">application/x-bzip2</option>
+				<option value="application_x-font-ttf_H.json">application/x-font-ttf</option>
+				<option value="application_x-rpm_H.json">application/x-rpm</option>
+				<option value="application_x-sqlite3_H.json">application/x-sqlite3</option>
+				<option value="application_x-stuffit_H.json">application/x-stuffit</option>
+				<option value="application_zlib_H.json">application/zlib</option>
+				<option value="audio_mp4_H.json">audio/mp4</option>
+				<option value="audio_x-wav_H.json">audio/x-wav</option>
+				<option value="image_png_H.json">image/png</option>
+				<option value="image_vnd.microsoft.icon_H.json">image/vnd.microsoft.icon</option>
+				<option value="image_x-ms-bmp_H.json">image/x-ms-bmp</option>
+				<option value="message_rfc822_H.json">message/rfc822</option>
+				<option value="video_quicktime_H.json">video/quicktime</option>
+				<option value="video_x-flv_H.json">video/x-flv</option>
+
+			</select>
+		</div>
+		<div id="chart" class="container">
+			
+		</div>
+	</div>
+	<script type="text/javascript" src="scripts/script-fht.js"></script>
+</body>
+</html>
